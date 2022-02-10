@@ -7,6 +7,7 @@
 
 .card{
     min-width: 200px;
+    border-radius: 5px;
     display: inline-block;
     text-align: center;
     box-shadow: 0 5px 10px 10px rgba(187, 202, 216, 0.473);
