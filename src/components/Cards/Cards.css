@@ -1,0 +1,43 @@
+.cards{
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
+
+.card{
+    min-width: 200px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 5px 10px 10px rgba(187, 202, 216, 0.473);
+    margin-bottom: 10px;
+}
+
+#active{
+    color: red;
+    border-top: 10px solid red;
+}
+
+#death{
+    border-top: 10px solid gray;
+    color: gray;
+}
+
+#discharged{
+    border-top: 10px solid rgb(20, 160, 20);
+    color: rgb(20, 160, 20);
+}
+
+.inline{
+    display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .cards{
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 

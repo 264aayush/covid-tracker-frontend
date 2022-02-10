@@ -1,0 +1,31 @@
+
+
+nav#navbar{
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+    height: 60px;
+    line-height: 60px;
+}
+
+
+.brand{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+#app-logo{
+    height: 1.4rem;
+    width: 1.4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+

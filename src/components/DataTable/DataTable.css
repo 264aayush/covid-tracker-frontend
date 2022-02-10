@@ -1,0 +1,133 @@
+#table-container {
+    border-top: 15px solid #2874f0;
+    box-shadow: 0px 10px 12px 1px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    /* background-color: rgba(240, 248, 255, 0.466);     */
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+
+.sort-by{
+    float: left;
+    margin-top: 17px;
+}
+
+#select-sort{
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+th, td {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+}
+
+th {
+    background-color: #2875f02d;
+}
+
+.filter-div{
+    line-height: 60px;
+    text-align: end;
+}
+.search-box{
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-button{
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #2874f0;
+    margin-right: 30px;
+    width: 80px;
+    border: none;
+    color:white;
+    font-size:1.2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:601px) {
+    .sort-by{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 100%; */
+    }
+    
+    #select-sort{
+        width: 90%;
+        height: 30px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .filter-div{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    .search-box{
+        width: 60%;
+    }
+    .search-button{
+        width: 30%;
+        margin-right: 0px;
+    }
+
+    table.mobile-optimised {
+        word-wrap: break-word;
+    }
+
+    table.mobile-optimised thead {
+        position: absolute;
+        left: -999em;
+        top: -999em;
+    }
+
+    table.mobile-optimised td {
+        display: block;
+        width: 100%;
+        clear: both;
+        background: whitesmoke;
+        padding: 10px 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    table.mobile-optimised tbody, table.mobile-optimised tr {
+        display: block
+    }
+
+    .mobile-optimised td:before {
+        content: attr(data-th);
+        /* display: block; */
+        font-weight: bold;
+        margin: 0 0 2px;
+        color: #000;
+    }
+
+    .mobile-optimised tbody tr {
+        float: left;
+        width: 100%;
+        
+        border-bottom: 15px solid #2874f0;
+    }
+}
