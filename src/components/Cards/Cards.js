@@ -2,7 +2,7 @@ import './Cards.css'
 
 let Cards = (props) => {
   if (Object.keys(props.data).length === 0) {
-    return <div></div>
+    return <div className="loader"></div>
   }
   let active = props.data.find(element => element.sno === "11111")?.new_active
   let death = props.data.find(element => element.sno === "11111")?.new_death
